@@ -19,18 +19,14 @@ function next1()
 {
     if(act)
     {
-        var prev;
         if(act==last)
         {
             act = first;
-            prev = last;
         }
         else
         {
             act = act.nextSibling;
-            prev = act.previousSibling;
         }
-        prev.style.color = 'black';
     }
     else
     {
@@ -42,18 +38,14 @@ function last1()
 {
     if(act)
     {
-        var next;
         if(act==first)
         {
             act = last;
-            next = first;
         }
         else
         {
             act = act.previousSibling;
-            next = act.nextSibling;
         }
-        next.style.color = 'black';
     }
     else
     {
